@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Chapter:</strong>
+  <%= @ver.chapter %>
+</p>
+
+<p>
+  <strong>Test:</strong>
+  <%= @ver.test %>
+</p>
+
+<%= link_to 'Edit', edit_ver_path(@ver) %> |
+<%= link_to 'Back', vers_path %>

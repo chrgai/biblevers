@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: biblevers_production
-#  username: biblevers
-#  password: <%= ENV['BIBLEVERS_DATABASE_PASSWORD'] %>
+  username: biblevers
+  password: <%= ENV['BIBLEVERS_DATABASE_PASSWORD'] %>

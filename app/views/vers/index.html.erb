@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chapter</th>
+      <th>Test</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vers.each do |ver| %>
+      <tr>
+        <td><%= ver.chapter %></td>
+        <td><%= ver.test %></td>
+        <td><%= link_to 'Show', ver %></td>
+        <td><%= link_to 'Edit', edit_ver_path(ver) %></td>
+        <td><%= link_to 'Destroy', ver, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ver', new_ver_path %>
